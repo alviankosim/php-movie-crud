@@ -12,7 +12,7 @@
     <meta property="og:description" content="Remove boring time by watching a movie recommended by daMOVIES">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://app.codeseem.com/movie" />
-    <meta property="og:image" content="https://app.codeseem.com/assets/images/damovies_logo.jpg" />
+    <meta property="og:image" content="https://app.codeseem.com/movie/assets/images/damovies_logo.jpg" />
 </head>
 <body>
     <div class="main">
