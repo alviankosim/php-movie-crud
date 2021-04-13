@@ -21,7 +21,7 @@
                     <td><?= $no ?></td>
                     <td><img width="100" src="<?= $row['image_link'] ?>" alt="<?= $row['title'] ?>"></td>
                     <td style="text-align: left;"><a class="links" style="color:#333" href="/movie/main/movie/detail.php?id=<?= $row['id'] ?>"><?= $row['title'] ?></a></td>
-                    <td><?= substr(floatval($result['review']), 0, 3) ?><i class="fa fa-star"></i></td>
+                    <td><?= substr(floatval($row['stars']), 0, 3) ?><i class="fa fa-star"></i></td>
                 </tr>
             <? $no++;
             endforeach ?>
