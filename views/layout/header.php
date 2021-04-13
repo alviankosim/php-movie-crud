@@ -3,9 +3,16 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>daMOVIES &mdash; movie list and reviews </title>
+    <title>daMOVIES - place for having best movie review and recommendation </title>
     <link rel="shortcut icon" href="/movie/assets/images/movie_logo123.png">
     <link rel="stylesheet" href="/movie/assets/css/main.css">
+    <!-- Start SEO Tags -->
+    <meta name="description" content="Remove any boring time by watching some movies recommended by daMOVIES. Chill and enjoy">
+    <meta property="og:title" content="daMOVIES - movie recommendation" />
+    <meta property="og:description" content="Remove boring time by watching a movie recommended by daMOVIES">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://app.codeseem.com/movie" />
+    <meta property="og:image" content="https://app.codeseem.com/assets/images/damovies_logo.jpg" />
 </head>
 <body>
     <div class="main">
