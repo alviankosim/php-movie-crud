@@ -2,7 +2,7 @@
     <?= show_message() ?>
 </div>
 <div class="wrapper" style="display: inline-flex;align-items:center">
-    <h2><span class="hashtag">#</span> Movie List &nbsp;</h2>
+    <h2><span class="hashtag">#</span> <?= (count($dataSearch) > 0 ? 'Search Movie: ' . htmlentities(daGet('q')) : 'Movie List') ?> &nbsp;</h2>
     <?= (my_sess('username') ? '<a class="links" href="/movie/main/movie/add.php">Add New</a>'  : '') ?>
 </div>
 <div class="movie-list">

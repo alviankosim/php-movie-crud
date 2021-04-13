@@ -34,7 +34,7 @@
             <div class="menu-section">
                     <ul class="nav-menu">
                         <li><a href="/movie/main/<?= (my_sess('username') ? 'profile' : 'login') ?>"><?= (my_sess('username') ? htmlentities(my_sess('username')) : 'Login') ?></a></li>
-                        <li><a href="javascript:window.location.href='/movie/list?q=' + prompt('What movie do you want to search?');"><i class="fa fa-search"></i></a></li>
+                        <li><a href="javascript:window.location.href='/movie/main/movie/list.php?q=' + prompt('What movie do you want to search?');"><i class="fa fa-search"></i></a></li>
                     </ul>
                 </div>
             </div>
