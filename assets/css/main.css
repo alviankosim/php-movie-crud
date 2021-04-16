@@ -319,6 +319,9 @@ table, td, th {
 
 @media (max-width: 768px){
     
+    .brand {
+        display: none;
+    }
     .header-wrapper {
         padding: 0px 10px;
     }
@@ -346,6 +349,9 @@ table, td, th {
 
 @media (max-width: 640px){
  
+    .brand {
+        display: none;
+    }
     .nav-menu li a {
         font-size: 9pt;
     }
