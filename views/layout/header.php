@@ -1,4 +1,4 @@
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/movie/utils/genhelper.php"; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/movie/utils/genhelper.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +6,12 @@
     <title>daMOVIES - place for having best movie review and recommendation </title>
     <link rel="shortcut icon" href="/movie/assets/images/movie_logo123.png">
     <link rel="stylesheet" href="/movie/assets/css/main.css">
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DNS PREFETCH -->
+    <link rel="preconnect" href="https://upload.wikimedia.org/" crossorigin>
+    <link rel="dns-prefetch" href="https://upload.wikimedia.org/">
     <!-- Start SEO Tags -->
     <meta name="description" content="Remove any boring time by watching some movies recommended by daMOVIES. Chill and enjoy">
     <meta property="og:title" content="daMOVIES - movie recommendation" />
