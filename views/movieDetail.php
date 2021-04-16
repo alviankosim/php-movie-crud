@@ -85,7 +85,8 @@
 </div>
 <div class="wrapper">
     <h2><span class="hashtag">#</span> Other Movies You Might Like</h2>
-    <div class="most">
+</div>
+<div class="most">
     <?php foreach($other_movie as $row): ?>
         <a style="text-decoration: none;" href="/movie/main/movie/detail.php?id=<?= $row['id'] ?>">
             <div style="background-image: url('<?= $row['image_link'] ?>');background-position:center;background-size:cover" class="movie">
@@ -94,4 +95,3 @@
         </a>
     <?php endforeach; ?>
     </div>
-</div>
