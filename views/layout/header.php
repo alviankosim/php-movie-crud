@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/movie/assets/css/main.css">
     <meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- DNS PREFETCH -->
     <link rel="preconnect" href="https://upload.wikimedia.org/" crossorigin>
     <link rel="dns-prefetch" href="https://upload.wikimedia.org/">
