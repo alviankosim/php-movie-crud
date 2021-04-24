@@ -10,15 +10,11 @@ if (session_status() === PHP_SESSION_NONE) {
 if (!function_exists('my_sess')) {
     function my_sess($index)
     {
-        $return = null;
-
         if (isset($_SESSION['user_data'])) {
-            if (isset($_SESSION['user_data'][$index])) {
-                $return = $_SESSION['user_data'][$index];
-            }
+            return $_SESSION['user_data'][$index];
+        } else {
+            return null;
         }
-
-        return $return;
     }
 }
 

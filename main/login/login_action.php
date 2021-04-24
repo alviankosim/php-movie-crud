@@ -35,6 +35,8 @@ if (daPost('submit')) {
             //if he's admin
             if ($result['is_admin']) {
                 $daSession['is_admin'] = true;
+            } else {
+                $daSession['is_admin'] = false;
             }
 
             $_SESSION['user_data'] = $daSession;
