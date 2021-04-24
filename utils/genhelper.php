@@ -1,5 +1,7 @@
 <?php
-
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 /**
  * genhelper.php
  * author: @alviankosim
@@ -9,9 +11,6 @@ if (!function_exists('my_sess')) {
     function my_sess($index)
     {
         $return = null;
-        if (session_status() == PHP_SESSION_NONE) {
-            session_start();
-        }
 
         if (isset($_SESSION['user_data'])) {
             if (isset($_SESSION['user_data'][$index])) {

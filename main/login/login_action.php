@@ -28,12 +28,6 @@ if (daPost('submit')) {
         
         if ($result['password'] == md5($password)) {
 
-            //set session
-            if(session_status() == PHP_SESSION_NONE) 
-            { 
-                session_start(); 
-            } 
-
             $daSession = array(
                 'id' => $result['id'],
                 'username' => $result['username']

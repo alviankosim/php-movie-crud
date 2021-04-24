@@ -59,10 +59,6 @@ function redirect($path)
  */
 function set_message($type, $message)
 {
-    if(session_status() == PHP_SESSION_NONE) 
-    { 
-        session_start(); 
-    }
     $dataSession = array(
         'type' => $type,
         'message' => $message
@@ -77,10 +73,6 @@ function set_message($type, $message)
 function show_message()
 {
     $return = "";
-    if(session_status() == PHP_SESSION_NONE) 
-    { 
-        session_start(); 
-    } 
     if (isset($_SESSION) && isset($_SESSION['message'])) {
         $return =  '
         <div class="alert '. $_SESSION['message']['type'] .'">
