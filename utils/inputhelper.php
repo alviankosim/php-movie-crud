@@ -59,7 +59,7 @@ function redirect($path)
  */
 function set_message($type, $message)
 {
-    if(!isset($_SESSION)) 
+    if(session_status() == PHP_SESSION_NONE) 
     { 
         session_start(); 
     }
@@ -77,7 +77,7 @@ function set_message($type, $message)
 function show_message()
 {
     $return = "";
-    if(!isset($_SESSION)) 
+    if(session_status() == PHP_SESSION_NONE) 
     { 
         session_start(); 
     } 

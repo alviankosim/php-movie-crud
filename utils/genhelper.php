@@ -9,7 +9,7 @@ if (!function_exists('my_sess')) {
     function my_sess($index)
     {
         $return = null;
-        if (!isset($_SESSION)) {
+        if (session_status() == PHP_SESSION_NONE) {
             session_start();
         }
 

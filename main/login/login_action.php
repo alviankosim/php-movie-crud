@@ -29,7 +29,7 @@ if (daPost('submit')) {
         if ($result['password'] == md5($password)) {
 
             //set session
-            if(!isset($_SESSION)) 
+            if(session_status() == PHP_SESSION_NONE) 
             { 
                 session_start(); 
             } 
