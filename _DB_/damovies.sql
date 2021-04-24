@@ -82,6 +82,7 @@ CREATE TABLE `user` (
   `id` int(32) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(250) NOT NULL,
+  `is_admin` tinyint(2) DEFAULT 0,
   `created_date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 

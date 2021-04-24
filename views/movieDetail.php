@@ -21,7 +21,10 @@
     <?= show_message() ?>
     <div class="wrapper" style="display: inline-flex;">
         <h1><span class="hashtag">#</span> <?= htmlentities($result['title']) ?> &nbsp; </h1>
-        <?= my_sess('username') ? '<a class="links" href="'. (base_url('main/movie/edit.php?id=' . $result["id"]) .'"><i class="fa fa-pencil"></i>Edit</a>') : '' ?>
+        <div style="display: flex;flex-direction:column">
+            <?= my_sess('username') ? '<a class="links" href="'. (base_url('main/movie/edit.php?id=' . $result["id"]) .'"><i class="fa fa-pencil"></i>Edit</a>') : '' ?>
+            <?= my_sess('is_admin') ? '<a class="links" href="'. (base_url('main/movie/delete.php?id=' . $result["id"]) .'"><i class="fa fa-times"></i>Delete</a>') : '' ?>
+        </div>
     </div>
     <div class="video-wrapper">
         <iframe width="560" height="349" src="https://www.youtube-nocookie.com/embed/<?= $url ?>?controls=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

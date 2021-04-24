@@ -8,14 +8,18 @@
 if (!function_exists('my_sess')) {
     function my_sess($index)
     {
+        $return = null;
         if (!isset($_SESSION)) {
             session_start();
         }
+
         if (isset($_SESSION['user_data'])) {
-            return $_SESSION['user_data'][$index];
-        } else {
-            return null;
+            if (isset($_SESSION['user_data'][$index])) {
+                $return = $_SESSION['user_data'][$index];
+            }
         }
+
+        return $return;
     }
 }
 
@@ -67,7 +71,24 @@ if (!function_exists('checklogin')) {
     function checklogin()
     {
         if (my_sess('username')) {
-            
+            //kali aja dibutuhin nanti
+        } else {
+            header("HTTP/1.1 401 Unauthorized");
+            echo "Not authorized";
+            exit();
+        }
+    }
+}
+
+if (!function_exists('checkIsAdmin')) {
+    /**
+     * Function untuk cek login apakah dia admin
+     * @author alviankosim
+     */
+    function checkIsAdmin()
+    {
+        if (my_sess('is_admin')) {
+            //kali aja dibutuhin nanti
         } else {
             header("HTTP/1.1 401 Unauthorized");
             echo "Not authorized";

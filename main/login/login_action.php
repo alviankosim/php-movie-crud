@@ -33,10 +33,17 @@ if (daPost('submit')) {
             { 
                 session_start(); 
             } 
-            $_SESSION['user_data'] = array(
+
+            $daSession = array(
                 'id' => $result['id'],
                 'username' => $result['username']
             );
+            //if he's admin
+            if ($result['is_admin']) {
+                $daSession['is_admin'] = true;
+            }
+
+            $_SESSION['user_data'] = $daSession;
 
             //redirect ke home
             redirect('');
